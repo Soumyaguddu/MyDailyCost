@@ -66,4 +66,15 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Splash API
+    implementation ("androidx.core:core-splashscreen:1.0.1")
+
+    implementation ("androidx.navigation:navigation-compose:2.7.6")
+    implementation("androidx.compose.ui:ui:1.6.0")
+    implementation("androidx.compose:compose-bom:2024.01.00")
+    implementation("androidx.compose.material:material:1.6.0")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0-RC2")
+
 }

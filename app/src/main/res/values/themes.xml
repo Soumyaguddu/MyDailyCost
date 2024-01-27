@@ -2,4 +2,15 @@
 <resources>
 
 	<style name="Theme.MyDailyCost" parent="android:Theme.Material.Light.NoActionBar" />
+
+	<style name="Theme.SplashScreen.MySplash" parent="Theme.SplashScreen">
+		<item name="windowSplashScreenBackground">#FFD0BCFF</item>
+		<item name="windowSplashScreenAnimatedIcon">@drawable/logo_mycost</item>
+		<item name="postSplashScreenTheme">@style/Theme.SplashScreen</item>
+	</style>
+
+	<style name="Splash" parent="android:Theme.Material.Light.NoActionBar">
+		<!-- Customize your theme here -->
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
 </resources>
