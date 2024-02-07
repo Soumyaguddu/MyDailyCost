@@ -14,11 +14,7 @@ object Constants {
             icon = Icons.Filled.Home,
             route = "home"
         ),
-        BottomNavItem(
-            label = "Search",
-            icon = Icons.Filled.Search,
-            route = "search"
-        ),
+
         BottomNavItem(
             label = "Profile",
             icon = Icons.Filled.Person,

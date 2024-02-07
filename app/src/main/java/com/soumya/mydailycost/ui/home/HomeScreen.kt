@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -50,7 +51,8 @@ fun BottomNavigationBar(navController: NavHostController) {
 
     BottomNavigation(
         //set background color
-        backgroundColor = Color(0xFF399BC7)
+        backgroundColor = Color(0xFF2093C7),
+        elevation = 15.dp
     ) {
 
         //observe the backstack
@@ -112,17 +114,14 @@ fun NavHostContainer(
 
             //  route : Home
             composable("home") {
-                HomeViewScreen("home")
+                HomeViewScreen("Home")
             }
 
-            //  route : search
-            composable("search") {
-                SearchScreen("search")
-            }
+
 
             //  route : profile
             composable("profile") {
-                ProfileScreen("profile")
+                ProfileScreen("Profile")
             }
         })
 
@@ -143,11 +142,11 @@ fun HomeViewScreen(name: String) {
         //Icon Composable
         Icon(
             imageVector = Icons.Default.Home,
-            contentDescription = name,
+            contentDescription = "home",
             tint = Color(0xFF0F9D58)
         )
         //Text to Display the current Screen
-        Text(text = "Home", color = Color.Black)
+        Text(text = name, color = Color.Black)
 
     }
 }
@@ -167,35 +166,13 @@ fun ProfileScreen(name: String) {
         //Icon Composable
         Icon(
             imageVector = Icons.Default.Person,
-            contentDescription = name,
+            contentDescription = "profile",
             tint = Color(0xFF0F9D58)
         )
         //Text to Display the current Screen
-        Text(text = "Home", color = Color.Black)
+        Text(text = name, color = Color.Black)
 
     }
 }
 
-@Composable
-fun SearchScreen(name: String) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.White),
-        // parameters set to place the items in center
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
 
-
-        //Icon Composable
-        Icon(
-            imageVector = Icons.Default.Search,
-            contentDescription = name,
-            tint = Color(0xFF0F9D58)
-        )
-        //Text to Display the current Screen
-        Text(text = "Home", color = Color.Black)
-
-    }
-}
