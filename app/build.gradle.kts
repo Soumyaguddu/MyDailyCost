@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
 }
 
 android {
@@ -70,11 +71,22 @@ dependencies {
     // Splash API
     implementation ("androidx.core:core-splashscreen:1.0.1")
 
-    implementation ("androidx.navigation:navigation-compose:2.7.6")
-    implementation("androidx.compose.ui:ui:1.6.0")
-    implementation("androidx.compose:compose-bom:2024.01.00")
-    implementation("androidx.compose.material:material:1.6.0")
+    implementation ("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.compose.ui:ui:1.6.1")
+    //noinspection BomWithoutPlatform
+    implementation("androidx.compose:compose-bom:2024.02.00")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0-RC2")
+
+//Accompanist
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta")
+
+
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    //Datastore
+    implementation ("androidx.datastore:datastore-preferences:1.0.0")
 
 }

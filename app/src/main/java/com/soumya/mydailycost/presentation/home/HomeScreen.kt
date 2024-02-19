@@ -1,4 +1,4 @@
-package com.soumya.mydailycost.ui.home
+package com.soumya.mydailycost.presentation.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -6,11 +6,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.BottomNavigation
-import androidx.compose.material.BottomNavigationItem
-import androidx.compose.material.Icon
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
+import androidx.compose.material3.Icon
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
@@ -50,7 +48,7 @@ fun HomeScreen() {
 fun BottomNavigationBar(navController: NavHostController) {
 
 
-    BottomNavigation(
+  /*  BottomNavigation(
         //set background color
         backgroundColor = Color(0xFF2093C7),
         elevation = 15.dp
@@ -88,7 +86,7 @@ fun BottomNavigationBar(navController: NavHostController) {
         }
 
 
-    }
+    }*/
 }
 
 /**

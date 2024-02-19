@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="App.Starting.Theme" parent="Theme.SplashScreen">
+<item name="windowSplashScreenBackground">#FFFFFF</item>
+<item name="windowSplashScreenAnimatedIcon">@drawable/budget_new</item>
+<item name="postSplashScreenTheme">@style/Theme.MyDailyCost</item>
+
+
+</style>
+</resources>
