@@ -49,6 +49,7 @@ fun HomeScreen() {
 @Composable
 fun BottomNavigationBar(navController: NavHostController) {
 
+
     BottomNavigation(
         //set background color
         backgroundColor = Color(0xFF2093C7),
